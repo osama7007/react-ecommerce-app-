@@ -1,6 +1,5 @@
 // grouping exported pages
 export {default as Cart } from "./cart";
-export {default as Contact } from "./contact";
 export {default as Home } from "./home";
 export {default as NotFound } from "./notFound";
 export {default as OrderCycle } from "./orderCycle";

@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import {Home , Cart ,Contact, OrderCycle,ProductDetails ,NotFound , Login , Register,Wishlist,Electronics,Fashion,Fragrances,Detergents ,Computers,Appliancies} from "./pages";
+import {Home , Cart , OrderCycle,ProductDetails ,NotFound , Login , Register,Wishlist,Electronics,Fashion,Fragrances,Detergents ,Computers,Appliancies} from "./pages";
 import Root from './routes/Root';
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -36,10 +36,6 @@ const router = createBrowserRouter([
       {
         path : '/wishlist',
         element : <Wishlist/>
-      },
-      {
-        path : '/contact',
-        element : <Contact/>
       },
       {
         path : '/oderCycle',
