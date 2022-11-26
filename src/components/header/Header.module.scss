@@ -1,0 +1,23 @@
+header{
+    background-color: var(--secondary-color) !important;
+    box-shadow: 0px -8px 30px 15px var(--secondary-color);
+    .logo_wrapper{
+        width: 50px;
+    }
+    .cart{
+        background-color: var(--primary-color);
+    }
+    .register , .cart{
+        width: 40px;
+        height: 30px;
+        padding: 3px;
+        color: var(--white);
+        border-radius: 5px;
+        line-height: 10px;
+    }
+    .register{
+        a:hover{
+            color: var(--primary-color) !important;
+        }
+    }
+}

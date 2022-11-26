@@ -1,0 +1,19 @@
+.imgWrapper{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  .orderBtn{
+    background-color: var(--primary-color);
+    font-weight: bold;
+    padding: 5px;
+    width: 25%;
+    height: 50px;
+  }
+  

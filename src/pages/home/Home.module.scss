@@ -1,0 +1,18 @@
+.home{
+    min-width: 500px;
+}
+.burger_icon:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+    color: var(--primary-color);
+}
+.burger_sideBar{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    z-index: 120px;
+    background-color:var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px #333;
+}

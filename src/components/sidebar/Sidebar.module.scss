@@ -1,0 +1,19 @@
+button:hover{
+border-color: var(--black) !important;
+font-weight: bold;
+transform: scale(1.1);
+color:var(--black) !important ;
+}
+li a {
+color: var(--black) !important;
+}
+.sidebar_wrapper{
+    box-shadow: 0 0 1px 1px #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}

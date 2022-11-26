@@ -1,0 +1,29 @@
+// general styling
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif !important;
+    overflow-x: hidden;
+}
+:root{
+    --primary-color : #EF3F3F;
+    --white : #ffffff;
+    --black : #000000;
+    --secondary-color : #212529;
+}
+input:focus{
+    outline: none;
+}
+.pointer{
+    cursor: pointer;
+}
+.nav-link ,a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+ul{
+    list-style-type: none;
+}

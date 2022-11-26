@@ -1,0 +1,21 @@
+.logo_wrapper {
+  width: 50px;
+}
+
+.searchIcon {
+  transform: scale(1.5);
+  position: absolute;
+  right: 120px;
+}
+
+.input_style {
+  width: 200px;
+}
+
+.cart {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 30px;
+  padding: 3px;
+  color: var(--white);
+}/*# sourceMappingURL=Header.module.css.map */

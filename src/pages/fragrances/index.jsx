@@ -1,0 +1,44 @@
+import { motion } from "framer-motion";
+import ProductCard from "../../components/producrCard";
+import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom";
+
+const Fragrances = () => {
+  const [Fragrances, setFragrances] = useState([]);
+  const navigate = useNavigate();
+  const getFragrances = ()=>{
+      fetch(`http://localhost:3005/products?category=Fragrances`)
+      .then(res => res.json())
+      .then(json=> setFragrances(json))
+  }
+  
+  useEffect(()=>{
+      getFragrances();
+  },[]);
+  
+     // animate component
+     const animations = {
+      initial: { scale: 0 },
+      animate: { scale: 1 },
+      exit: { scale: 0 },
+      transition: { delay: 0.5 },
+      duration: 5,
+    }
+    return (
+      <motion.div {...animations}>
+  
+      
+  <div className="d-flex flex-wrap gap-5 justify-content-center container-fluid">
+          {
+          Fragrances.map((product)=>{
+              return(
+                  <ProductCard product={product} navigation={()=>navigate(`/product/${product.id}`)} key={product.id}/>
+              )
+          })
+  }
+      </div>
+      </motion.div>
+    )
+}
+
+export default Fragrances

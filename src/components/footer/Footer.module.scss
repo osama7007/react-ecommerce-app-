@@ -1,0 +1,19 @@
+.footer_background{
+    background-color: var(--secondary-color);
+    padding: 70px;
+    color : var(--white);
+    .logo_wrapper{
+        img{
+            width: 120px;
+        }
+    }
+   ul li{
+    a{
+        color: white !important;;
+    }
+        margin: 5px;
+        a:hover{
+            color: var(--primary-color) !important;
+        }
+    }
+}

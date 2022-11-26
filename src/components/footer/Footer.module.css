@@ -1,0 +1,14 @@
+.footer_background {
+  background-color: var(--secondary-color);
+  padding: 100px;
+  color: var(--white);
+}
+.footer_background .logo_wrapper img {
+  width: 120px;
+}
+.footer_background li {
+  margin: 5px;
+}
+.footer_background li a:hover {
+  color: var(--primary-color) !important;
+}/*# sourceMappingURL=Footer.module.css.map */
