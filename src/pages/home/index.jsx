@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       }
     </div>
-    <div className="col-9 row gap-3 " >
+    <div className="col-9 row gap-3 mb-3" >
       {
         records.map((product , index)=>{
           return(
