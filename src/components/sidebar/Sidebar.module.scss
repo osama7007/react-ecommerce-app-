@@ -16,4 +16,7 @@ color: var(--black) !important;
     justify-content: center;
     align-items: center;
     width: 200px;
+    ul li :hover{
+        color: var(--primary-color);
+    }
 }

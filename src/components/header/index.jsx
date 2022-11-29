@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header className="bg-dark mb-5">
-      <nav className="navbar navbar-light container">
+      <nav className="navbar navbar-light container mb-1">
   <Link  to="/" className={`${style.logo_wrapper} navbar-brand d-flex gap-2 align-items-center`}>
     <img src={Logo} alt="logo" className="w-100 rounded-circle"/>
      <h2 className="fw-bold">Shopify</h2>
@@ -63,6 +63,14 @@ function Header() {
     </div>
     }
   </div>
+  </nav>
+  <nav className='underNav p-2 bg-dark' >
+    <ul className='d-flex gap-5 justify-content-center '>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/product/top_rated">Top Rated</Link></li>
+      <li><Link to="/product/best_seller">Best Seller</Link></li>
+      <li><Link to="/product/sales">Sales</Link></li>
+    </ul>
   </nav>
     </header>
   )

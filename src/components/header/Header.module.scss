@@ -20,4 +20,12 @@ header{
             color: var(--primary-color) !important;
         }
     }
+    nav ul li a{
+        color: white !important;
+        font-weight: bold;
+        transition: color .3s;
+        &:hover{
+            color:var(--primary-color) !important;
+            }
+    }
 }

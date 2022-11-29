@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import {Home , Cart ,Contact, OrderCycle,ProductDetails ,NotFound , Login , Register,Wishlist,Electronics,Fashion,Fragrances,Detergents ,Computers,Appliancies} from "./pages";
+import {Home , Cart , OrderCycle,ProductDetails ,NotFound , Login , Register,Wishlist,Electronics,Fashion,Fragrances,Detergents ,Computers,Appliancies} from "./pages";
 import Root from './routes/Root';
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -14,6 +14,9 @@ import Games from './pages/games';
 import Accessories from './pages/accessories';
 import TV from './pages/TV';
 import Watch from './pages/watch';
+import BestSeller from './pages/best seller';
+import Sales from './pages/sales';
+import TopRated from './pages/top rated';
 // intialize routing
 const router = createBrowserRouter([
   {
@@ -38,10 +41,6 @@ const router = createBrowserRouter([
         element : <Wishlist/>
       },
       {
-        path : '/contact',
-        element : <Contact/>
-      },
-      {
         path : '/oderCycle',
         element : <OrderCycle/>
       },
@@ -60,6 +59,18 @@ const router = createBrowserRouter([
       {
         path : '/product/:id',
         element : <ProductDetails/>
+      },
+      {
+        path : '/product/top_rated',
+        element : <TopRated/>
+      },
+      {
+        path : '/product/best_seller',
+        element : <BestSeller/>
+      },
+      {
+        path : '/product/sales',
+        element : <Sales/>
       },
       {
         path : '/products/:category=Electronics',
