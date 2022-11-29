@@ -14,6 +14,9 @@ import Games from './pages/games';
 import Accessories from './pages/accessories';
 import TV from './pages/TV';
 import Watch from './pages/watch';
+import BestSeller from './pages/best seller';
+import Sales from './pages/sales';
+import TopRated from './pages/top rated';
 // intialize routing
 const router = createBrowserRouter([
   {
@@ -56,6 +59,18 @@ const router = createBrowserRouter([
       {
         path : '/product/:id',
         element : <ProductDetails/>
+      },
+      {
+        path : '/product/top_rated',
+        element : <TopRated/>
+      },
+      {
+        path : '/product/best_seller',
+        element : <BestSeller/>
+      },
+      {
+        path : '/product/sales',
+        element : <Sales/>
       },
       {
         path : '/products/:category=Electronics',

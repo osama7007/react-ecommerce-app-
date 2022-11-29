@@ -78,8 +78,12 @@ const addToWishListHandler = ()=>{
         <p className={` m-auto fs-5`}>
           {product?.description}
         </p>
-        <ButtonStyle btntitle={"Add cart"} action={()=>addToCartHandler()} />
-        <ButtonStyle btntitle={"Add wishlist"} action={()=>addToWishListHandler() } />
+        {!product.stock ? <h4 style={{color:"red"}} >Out of stock</h4> : 
+      <div className="btn_wrapper d-flex gap-5 align-items-center justify-content-center">
+    <ButtonStyle btntitle={"Add cart"} action={()=>addToCartHandler()} />
+    { <ButtonStyle btntitle={"Add wishlist"} action={()=>addToWishListHandler() } />}
+    </div>  
+      } 
         </div>
       </div>
       )}
