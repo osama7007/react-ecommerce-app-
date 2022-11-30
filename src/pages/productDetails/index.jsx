@@ -64,15 +64,15 @@ const addToWishListHandler = ()=>{
       { Object.keys(product).length === 0 ? (
           <Spinner/>
       ) : (
-        <div className="container py-2 text-center d-flex gap-2 flex-wrap align-items-center justify-content-center">
-        <div className="w-50 ">
+        <div className="container text-center row align-items-center justify-content-center">
+        <div className="col-6 w-50 border-5">
           <img
             src={product?.img}
             alt="productIMG"
-            className={` w-100 mb-3 rounded-4`}
+            className={` w-50 rounded-4`}
           />
         </div>
-        <div className={`${style.product_content} w-100 w-lg-50`}>
+        <div className={`${style.product_content} col-6 `}>
         <h5 className="text-dark m-auto mb-4 fs-4 col-6" >{product?.title}</h5>
         <p className="text-dark m-auto mb-4 fs-4 col-6">{product?.price} EG</p>
         <p className={` m-auto fs-5`}>
